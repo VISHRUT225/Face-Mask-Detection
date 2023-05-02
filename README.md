@@ -21,6 +21,7 @@ This repository contains code for face detection using YOLOv5. The project is bu
 
  All the dependencies and required libraries are included in the file <code>requirements.txt</code>
 
+
 ## 🚀 Getting Started
 1. Clone Repo and install all dependencies
 ```
@@ -35,11 +36,13 @@ from IPython.display import Image, clear_output
 clear_output()
 ```
 
+
 2. Download the custom data-set that you are interested in (using the Roboflow api) Link to datasets 
 ```
 %cd /content
 !curl -L "Enter your API key/url" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
 ```
+
 
 3. Create the custom model configuration file
 ```
@@ -53,10 +56,12 @@ with open("data.yaml", 'r') as stream:
 
 ```
 
+
 4. Download pre-trained weights
 ```
 !wget https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5n.pt
 ```
+
 
 5. Train yolov5 on the custom images using the custom configuration file
 ```
@@ -66,6 +71,8 @@ with open("data.yaml", 'r') as stream:
 %cd /content/yolov5/
 !python train.py --img 416 --batch 16 --epochs 100 --data '../data.yaml' --weights /content/yolov5/yolov5n.pt --cache
 ```
+
+
 6. Inference on trained model
 ```
 from utils.plots import plot_results
@@ -77,13 +84,13 @@ Image(filename='/content/yolov5/runs/train/exp/results.png')
 ```
 
 
-
 ## 🔎 Detection
 1. Run yolov5 detection on images.
 ```
 #Don't forget to copy the location of the weights file and replace it in the code below
 !python detect.py --weights /content/yolov5/runs/train/exp/weights/best.pt --img 416 --conf 0.4 --source ../test/images
 ```
+
 
 2. Show mask-detected images
 ```
@@ -94,6 +101,7 @@ for imageName in glob.glob('/content/yolov5/runs/detect/exp2/*.jpg'):
     display(Image(filename=imageName))
     print("\n")
 ```
+
 
 ## 📷 Detected Images
 
