@@ -1,7 +1,9 @@
 # Face-Mask-Detection
 This repository contains code for face detection using YOLOv5. The project is built on the PyTorch deep learning framework and uses the YOLOv5 object detection algorithm for detecting faces.
 
-## 📑 Tech Stack
+![Live Demo](https://github.com/)
+
+## 📑 Tech Stack/Frameworks
 
 - Python
 - YOLOv5
@@ -18,7 +20,7 @@ This repository contains code for face detection using YOLOv5. The project is bu
 
  All the dependencies and required libraries are included in the file <code>requirements.txt</code>
 
-## 🚀&nbsp; Installation
+## 🚀 Getting Started
 1. Clone Repo and install all dependencies
 ```
 !git clone https://github.com/ultralytics/yolov5
@@ -75,7 +77,7 @@ Image(filename='/content/yolov5/runs/train/exp/results.png')
 
 
 
-## 🚀&nbsp; Detection
+## 🔎 Detection
 1. Run yolov5 detection on images.
 ```
 #Don't forget to copy the location of the weights file and replace it in the code below
@@ -92,8 +94,10 @@ for imageName in glob.glob('/content/yolov5/runs/detect/exp2/*.jpg'):
     print("\n")
 ```
 
-## 🚀&nbsp; Detected Images
+## 📷 Detected Images
+
+<img src="./Detected Images/1.jpg" alt="1" style="width: 300px; height: auto;"> &nbsp;<img src="./Detected Images/2.jpg" alt="1" style="width: 300px; height: auto;"> &nbsp; <img src="./Detected Images/5.jpg" alt="1" style="width: 300px; height: auto;"> &nbsp;<img src="./Detected Images/3.jpg" alt="1" style="width: 300px; height: auto;"> &nbsp;<img src="./Detected Images/4.jpg" alt="1" style="width: 300px; height: auto;"> &nbsp;
 
 
-## Acknowledgements
+## 👍🏻 Acknowledgements
 The YOLOv5 implementation used in this project was adapted from the Ultralytics YOLOv5 repository. Thanks to the authors for making their code available under an open source license.
