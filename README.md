@@ -1,7 +1,7 @@
 # Face-Mask-Detection
 This repository contains code for face detection using YOLOv5. The project is built on the PyTorch deep learning framework and uses the YOLOv5 object detection algorithm for detecting faces.
 
-![Live Demo](https://github.com/)
+<center><img align="center" src="./Detected Images/mask_gif.gif" alt="1" style="width: 300px; height: auto;"></center>
 
 ## 📑 Tech Stack/Frameworks
 
